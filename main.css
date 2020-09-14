@@ -1,0 +1,184 @@
+header {
+  display: grid;
+  padding: 1em;
+  grid-template-columns: auto auto 1fr auto auto auto auto;
+  grid-column-gap: 1.5em;
+  font-size: 14px;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: #f2f2f2;
+}
+
+#footer-links {
+  font-size: 14px;
+  display: grid;
+  padding: 1em;
+  grid-template-columns: auto auto auto 1fr auto auto auto;
+  grid-column-gap: 2em;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #64686D;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#about {
+  grid-column: 1/2;
+}
+
+#store {
+  grid-column: 2/3;
+}
+
+#gmail {
+  grid-column: 4/5;
+}
+
+#images {
+  grid-column: 5/6;
+}
+
+#apps {
+  grid-column: 6/7;
+  width: 25px;
+  filter: invert() brightness(40%);
+}
+
+#account {
+  grid-column: 7/8;
+  height: auto;
+  background-color: #4583ED;
+  border: none;
+  border-radius: 5px;
+}
+
+#account:hover {
+  cursor: pointer;
+}
+
+#account > p {
+  text-align: center;
+  margin: .5em 1em .6em 1em;
+  color: white;
+}
+
+#advertising {
+  grid-column: 1/2;
+}
+
+#business {
+  grid-column: 2/3;
+}
+
+#how-search {
+  grid-column: 3/4;
+}
+
+#privacy {
+  grid-column: 5/6;
+}
+
+#terms {
+  grid-column: 6/7;
+}
+
+#settings {
+  grid-column: 7/8;
+}
+
+#content {
+  width: 100%;
+  padding-top: 10%;
+}
+
+#logo {
+  display: block;
+  margin: auto;
+}
+
+#search-form {
+  display: block;
+  margin: auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+#search-bar {
+  width: 60%;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2em;
+  border: 1px solid #D7D7D7;
+  height: 2em;
+  padding: .5em .5em .5em .5em;
+}
+
+#search-bar:hover {
+  box-shadow: 0 0 5px 2px #EFEFEF;
+}
+
+#search-bar > img, #search-bar > input[type="image"] {
+  height: 60%;
+  margin: 0 1em 0 1em;
+  vertical-align: middle;
+}
+
+#magnifying-glass {
+  filter: grayscale(100%);
+}
+
+/* clears the ‘X’ from Internet Explorer */
+input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+/* clears the ‘X’ from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+#search-text-box {
+  flex-grow: 1;
+  height: 2.5em;
+  border: none;
+  padding: none;
+  font-size: 16px;
+}
+
+#search-text-box:focus {
+  outline: none;
+}
+
+#buttons {
+  display: inline-block;
+  margin: auto;
+  width: auto;
+}
+
+#buttons > button {
+  border: none;
+  border-radius: 5px;
+  background-color: #F2F2F2;
+  color: #666A6F;
+  margin: 0 1em 0 1em;
+  padding: 0 1em 0 1em;
+}
+
+#buttons > button:hover {
+  border: 1px solid #666A6F;
+  cursor: pointer;
+}
